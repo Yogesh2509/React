@@ -1,0 +1,21 @@
+[{
+    "name":"Yogesh",
+    "class":5,
+    "college":"SIT"
+},
+{
+    "name":"Saurabh",
+    "class":6,
+    "college":"SIT"
+},
+{
+    "name":"Pratyush",
+    "class":8,
+    "college":"SIT"
+},
+{
+    "name":"Kanchan",
+    "class":12,
+    "college":"SIT"
+}
+]
