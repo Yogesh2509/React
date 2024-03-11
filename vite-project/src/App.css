@@ -41,9 +41,30 @@
     width: 200px;
 }
 #container{
-    width: 100%;
     text-align: center;
-    margin-top: auto;
+    margin-top: 20px;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#records{
+    color:white;
+    background-color: rgb(12, 12, 170);
+    text-align: center;
+    padding: 20px;
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 25px;
+    margin-top: ;
+}
+.data_value{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    box-shadow: rgba(0,0,0,0.2);
+    padding: 2px,4px,6px,8px;
 }
