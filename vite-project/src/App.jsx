@@ -10,9 +10,8 @@ const App = () => {
   const  [email,setEmail] = useState("");
   const [data, setData] = useState([]);
   function addData(){
-    setData({
-      name:name,email:email
-    })
+    setData([...data,{name:name,email:email}]);
+    set
   }
   return (
     <div id='app'>
@@ -38,6 +37,17 @@ const App = () => {
       <h1>Email</h1>
       <h1>Remove</h1>
       </div>
+      {
+        data.map((element) =>{
+          return(
+            <div className='data_value'>
+              <h4>{element.name}</h4>
+              <h4>{element.email}</h4>
+              <Button>Remove</Button>
+            </div>
+          )
+        })
+}
       </div>
       </div>
   )
