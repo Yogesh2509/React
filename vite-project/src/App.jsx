@@ -11,7 +11,13 @@ const App = () => {
   const [data, setData] = useState([]);
   function addData(){
     setData([...data,{name:name,email:email}]);
-    set
+    setName("");
+    setEmail("");
+  }
+  function removeItem(index){
+    let arr=data;
+    arr.splice(index,1)
+    setData([...arr])
   }
   return (
     <div id='app'>
@@ -38,12 +44,12 @@ const App = () => {
       <h1>Remove</h1>
       </div>
       {
-        data.map((element) =>{
+        data.map((element,index) =>{
           return(
             <div className='data_value'>
               <h4>{element.name}</h4>
               <h4>{element.email}</h4>
-              <Button>Remove</Button>
+              <Button onClick={()=>removeItem(index)}>Remove</Button>
             </div>
           )
         })
