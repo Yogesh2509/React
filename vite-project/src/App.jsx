@@ -11,8 +11,6 @@ const App = () => {
       const dataJson=await data.json();
       setEmployee(dataJson)
     }
-   // axios.get(`https://hub.dummyapis.com/employee?noofRecords=&idStarts=1001`).
-  //then(employee=>setEmployee(employee.data)).catch(err=>console.log(err)) 
     getData();
   },[state])     
    
